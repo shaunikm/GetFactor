@@ -11,7 +11,7 @@ class GetFactor {
         try {
             user_number = Long.parseLong(input.nextLine());
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Number not entered or number too large!");
+            throw new IllegalArgumentException("Invalid number or number too large!");
         }
 
         ArrayList<Long> factorList = new ArrayList<>(1);
