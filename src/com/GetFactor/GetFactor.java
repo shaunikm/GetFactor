@@ -13,6 +13,11 @@ class GetFactor {
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Invalid number or number too large!");
         }
+        if (user_number < 0) {
+            user_number *= -1;
+            System.out.print("[Number converted to a positive.]\n");
+        }
+        System.out.print("\n");
 
         ArrayList<Long> factorList = new ArrayList<>(1);
 
